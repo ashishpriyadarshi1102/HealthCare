@@ -48,7 +48,7 @@ public class TC005_VerifyingUserIsAbletoDeleteCampaignWithMandatoryFieldsWithLis
 		createcampaignpage.getClosingEndDate().sendKeys(EXPECTEDCLOSINGDATE);
 		createcampaignpage.getSaveButtonTop().click();
 		
-//		Verify
+//		Verify the expected and actual result
         String ExpectedResult = CAMPAIGNNAME;
         String ActualResult = campaignpage.getCampaignNameView().getText();
         Assert.assertEquals(ActualResult, ExpectedResult);
